@@ -8,83 +8,58 @@ and open the template in the editor.
     Author     : oym-dev06
 */
 
-.navbar-default{
-
-    width: 1365px;
-    height: fit-content;
-    
+@media screen and (min-width: 768px) {
+    .navbar-default{
+        display: block;
+        width: 1150px;
+        height: 20px;
+    }
+    .icono{
+        font-size: 15px;
+    }
+    .titulo{
+        font-size: 12px;
+    }
+    #colapsado{
+        visibility: hidden;
+    }
+    #vertical{
+        visibility: hidden;
+    }
+    .navbar-default .navbar-nav>li>a{
+        color: black;
+    }
 }
-
-.navbar-collapse{
-
-    font-size: 13px;
-    position: relative;
-    
-}
-.icono{
-    font-size: 18px;
-}
-.titulo{
-    font-size: 12px;
-}
-
-#colapsado{
-    visibility: hidden;
-}
-
-#vertical{
-    visibility: hidden;
-}
-
-.navbar-default .navbar-nav>li>a{
-    color: black;
-}
-
 @media screen and (max-width: 1000px) {
     .navbar-default{
-
         width: 150px;
         height: 700px;
     }
-
     #colapsado{
         visibility: visible;
     }
-
     #vertical{
         visibility: visible;
     }
-
     .navbar-default .navbar-toggle{
         display: none;
     }
-
     .navbar-default .navbar-collapse{
         display: block;
     }
-
-
 }
-
 @media screen and (max-width: 400px) {
     .navbar-default{
-
         width: 70px;
         height: 700px;
     }
-
-
     .navbar-default .navbar-toggle{
         display: none;
     }
-
     .navbar-default .navbar-collapse{
         display: block;
-
     }
     .titulo{
         display: none;
     }
-
-
 }
