@@ -13,10 +13,9 @@ and open the template in the editor.
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link href="styles.css" rel="stylesheet" type="text/css"/>
-        
     </head>
     <body>
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-default" >
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
@@ -26,56 +25,53 @@ and open the template in the editor.
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#"><b>UNA</b> <span  id="vertical" style="font-size: 10px;"  class="glyphicon glyphicon-menu-left"></span> <span id="colapsado" style="font-size: 10px;"  class="glyphicon glyphicon-menu-right"></span> </a>
+                    <a class="navbar-brand" href="#"><b style="font-size: 13px;margin-left: -5px;font-weight: 1000">UNA</b> <span  id="vertical" style="font-size: 10px;"  class="glyphicon glyphicon-menu-left"></span> <span id="colapsado" style="font-size: 10px;"  class="glyphicon glyphicon-menu-right"></span> </a>
                 </div>
-
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li><a href="#"> <i class="glyphicon glyphicon-usd icono" ></i><span class="titulo">&nbsp;Economia </span></a>
-                          
+                        <li><a href="#"> <i class="glyphicon glyphicon-usd icono"></i><span class="titulo">&nbsp;Economia </span></a>
+                            <ul class="submenu">
+                             <li class="subtitulo" >Contabilidad</li>
+                             <li class="subtitulo" >Adm. Empresa</li>
+                                    
+                            </ul>
                         </li>
                         <li><a href="#"> <i class="glyphicon glyphicon-cutlery icono"></i><span class="titulo">&nbsp;Cocina </span></a>
-                        
+                            <ul class="submenu">
+                                <li class="subtitulo"> Dietetica </li>
+                                <li class="subtitulo"> Panaderia </li>
+                            </ul>
                         </li>
-                        <li><a href="#"> <i class="glyphicon glyphicon-apple icono" ></i><span class="titulo">&nbsp;Nutricion </span></a>
-                        
+                        <li><a href="#"> <i class="glyphicon glyphicon-apple icono"></i><span class="titulo">&nbsp;Nutricion </span></a>
+                            <ul class="submenu">
+                                <li class="subtitulo" > IMC </li>
+                                <li class="subtitulo" > Obesidad </li>
+                            </ul>
                         </li>
                         <li><a href="#"> <i class="glyphicon glyphicon-camera icono"></i><span class="titulo">&nbsp;Fotografia </span></a>
-                        
+                            <ul class="submenu">
+                                <li class="subtitulo"> Bodas </li>
+                                <li class="subtitulo"> 15 años </li>
+                            </ul>
                         </li>
-                        <li><a href="#"> <i class="glyphicon glyphicon-earphone icono "></i><span class="titulo">&nbsp;Call Center </span></a>
-                        
+                        <li><a href="#"> <i class="glyphicon glyphicon-leaf "></i><span class="titulo" >&nbsp;Cinematografia </span></a>
+                            <ul class="submenu">
+                                <li class="subtitulo" > Cine 3D </li>
+                                <li class="subtitulo" > Ciencia Ficcion </li>
+                            </ul>
                         </li>
-                        <li><a href="#"> <i class="glyphicon glyphicon-film icono"></i><span class="titulo">&nbsp;Cinematografia </span></a>
-                        
-                        </li>
-         
+
                     </ul>
-                    
+
                 </div>
             </div>
         </nav>
         <script>
-            $("#colapsado").css("display","none");
-            $("#vertical").css("display","none");
-            
-             $(document).ready(function () {
-                $("#vertical").click(function () {
-                    $("#colapsado").show();
-                    $("#vertical").hide();  
-                    $(".titulo").css("display","none");  
-                    $(".navbar-default").css("width","80px");  
-                    $(".icono").css("font-size","25px");  
-                });
-                $("#colapsado").click(function () {
-                    $("#colapsado").hide();
-                    $("#vertical").show();         
-                      $(".titulo").css("display","inline"); 
-                       $(".navbar-default").css("width","150px"); 
-                       $(".icono").css("font-size","18px");            
-                  });
-            });
-            </script>
+            $("#colapsado").css("display", "none");
+            $("#vertical").css("display", "none");
+
+    
+        </script>
     </body>
 </html>
