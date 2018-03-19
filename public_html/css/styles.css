@@ -7,6 +7,11 @@ and open the template in the editor.
     Created on : 12/03/2018, 11:32:35 AM
     Author     : oym-dev06
 */
+
+
+
+
+
 .submenu{
     display: none;
     list-style-type: none;
@@ -35,7 +40,14 @@ ul.submenu li.subtitulo{
         display: block;
         width: 1228px;
         height: 20px;
+       position: fixed;
     }
+    .universidad{
+    font-size: 20px;
+    text-align: center;
+    display: block;
+}
+
     .submenu{
         display: none;
         list-style-type: none;
@@ -55,6 +67,7 @@ ul.submenu li.subtitulo{
         margin-top: 60px;
         margin-left: 10px;
         margin-right: 30px;
+        
     }
     .icono{
         font-size: 15px;
@@ -62,15 +75,10 @@ ul.submenu li.subtitulo{
     .titulo{
         font-size: 12px;
     }
-    #colapsado{
-        visibility: hidden;
-    }
-    #vertical{
-        visibility: hidden;
-    }
     .navbar-default .navbar-nav>li>a{
         color: black;
     }
+    
 }
 /* Css del Menu vertical*/
 
@@ -90,11 +98,11 @@ ul.submenu li.subtitulo{
 } */
 
 /*Css del menu Vertical Colapsado*/
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     .navbar-default{
         width: 45px;
         height: 700px;
-        position: absolute;
+        position: fixed;
     }
     .submenu{
         display: none;
@@ -132,5 +140,7 @@ ul.submenu li.subtitulo{
     }
     ol ol, ol ul, ul ol, ul ul{
         margin-bottom: -35px;
+        
     }
 }
+
